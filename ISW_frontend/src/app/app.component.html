@@ -1,0 +1,12 @@
+<div *ngIf="currentView === 'login'">
+    <app-login (navigateToRegister)="navigate('register')"></app-login>
+  </div>
+  <div *ngIf="currentView === 'register'">
+    <app-register (navigateToLogin)="navigate('login')"></app-register>
+  </div>
+  <div *ngIf="currentView === 'student'">
+    <app-student></app-student>
+  </div>
+  <div *ngIf="currentView === 'teacher'">
+    <app-teacher></app-teacher>
+  </div>
